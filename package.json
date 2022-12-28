@@ -1,9 +1,12 @@
 {
   "name": "share_ui",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.0.01",
+  "private": false,
+  "main": "lib/share_ui.umd.min.js",
   "scripts": {
+    "lib": "vue-cli-service build --target lib --name share_ui --dest lib src/index.js",
     "serve": "vue-cli-service serve",
+    "push": "node script.js && npm run lib && git add . && git commit -m 'commit' && git push",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
