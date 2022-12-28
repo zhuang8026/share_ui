@@ -37,5 +37,6 @@
   "exclude": [
     "node_modules"
   ],
-  "declarationMap": true
+  "noImplicitAny": false,
+  "allowJs": true
 }
